@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">        
+
+<tiles-definitions>
+	<definition name="baseTemplate" template="/template.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/footer.jsp" />
+	</definition>
+
+<definition name="newbaseTemplate" template="/template.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/tiles/newheader.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/footer.jsp" />
+	</definition>
+	
+	
+	<definition name="t_index" extends="baseTemplate">
+		<put-attribute name="title" value="Garden Login" />
+		<put-attribute name="body" value="/index.jsp" />
+	</definition>
+	
+	<definition name="t_buy" extends="newbaseTemplate">
+		<put-attribute name="title" value="SuccessFully Buy" />
+		<put-attribute name="body" value="/buy.jsp" />
+	</definition>
+	
+	<definition name="t_menu" extends="baseTemplate">
+		<put-attribute name="title" value="Garden Menu" />
+		<put-attribute name="body" value="/menu.jsp" />
+	</definition>
+	<definition name="t_home" extends="baseTemplate">
+		<put-attribute name="title" value="Login successful" />
+		<put-attribute name="body" value="/default.jsp" />
+	</definition>
+
+	<definition name="t_failed" extends="baseTemplate">
+		<put-attribute name="title" value="login failed" />
+		<put-attribute name="body" value="/failed.jsp" />
+	</definition>
+
+	<definition name="t_orders" extends="baseTemplate">
+		<put-attribute name="title" value="Garden Orders" />
+		<put-attribute name="body" value="/orders.jsp" />
+	</definition>
+
+	<definition name="t_logout" extends="baseTemplate">
+		<put-attribute name="title" value="Good Bye" />
+		<put-attribute name="body" value="/logout.jsp" />
+	</definition>
+	
+	<definition name="t_register" extends="baseTemplate">
+		<put-attribute name="title" value="Garden Register" />
+		<put-attribute name="body" value="/register.jsp" />
+	</definition>
+	
+	<definition name="t_changeaddress" extends="newbaseTemplate">
+		<put-attribute name="title" value="change password" />
+		<put-attribute name="body" value="/changeAddress.jsp" />
+	</definition>
+
+
+<definition name="t_admin" extends="baseTemplate">
+		<put-attribute name="title" value="Garden setting" />
+		<put-attribute name="body" value="/admin.jsp" />
+	</definition>
+
+	<definition name="t_account" extends="baseTemplate">
+		<put-attribute name="title" value="Account" />
+		<put-attribute name="body" value="/account.jsp" />
+	</definition>
+
+	<definition name="t_customerAccount" extends="newbaseTemplate">
+		<put-attribute name="title" value="CustomerAccount" />
+		<put-attribute name="body" value="/customerAccount.jsp" />
+	</definition>
+
+	<definition name="t_vendorAccount" extends="newbaseTemplate">
+		<put-attribute name="title" value="Vendor Account" />
+		<put-attribute name="body" value="/vendorAccount.jsp" />
+	</definition>
+
+	<definition name="t_adminAccount" extends="newbaseTemplate">
+		<put-attribute name="title" value="Admin Account" />
+		<put-attribute name="body" value="/adminAccount.jsp" />
+	</definition>
+
+	<definition name="t_aboutus" extends="baseTemplate">
+		<put-attribute name="title" value="About Us" />
+		<put-attribute name="body" value="/aboutus.jsp" />
+	</definition>
+
+	<definition name="t_contact" extends="baseTemplate">
+		<put-attribute name="title" value="Contact" />
+		<put-attribute name="body" value="/contact.jsp" />
+	</definition>
+
+	<definition name="t_default" extends="baseTemplate">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/default.jsp" />
+	</definition>
+
+	<definition name="t_fertilizer" extends="baseTemplate">
+		<put-attribute name="title" value="Fertilizers" />
+		<put-attribute name="body" value="/fertilizer.jsp" />
+	</definition>
+
+	<definition name="t_seeds" extends="baseTemplate">
+		<put-attribute name="title" value="Seeds" />
+		<put-attribute name="body" value="/seeds.jsp" />
+	</definition>
+
+	<definition name="t_toolsandmachine" extends="baseTemplate">
+		<put-attribute name="title" value="Tools and Machine" />
+		<put-attribute name="body" value="/toolsandmachine.jsp" />
+	</definition>
+
+	<definition name="t_dailybusiness" extends="newbaseTemplate">
+		<put-attribute name="title" value="Daily Business" />
+		<put-attribute name="body" value="/dailybusiness.jsp" />
+	</definition>
+
+	<definition name="t_weeklybusiness" extends="newbaseTemplate">
+		<put-attribute name="title" value="Weekly Business" />
+		<put-attribute name="body" value="/weeklybusiness.jsp" />
+	</definition>
+
+	<definition name="t_yearlybusiness" extends="newbaseTemplate">
+		<put-attribute name="title" value="Yearly Business" />
+		<put-attribute name="body" value="/yearlybusiness.jsp" />
+	</definition>
+
+	<definition name="t_monthlybusiness" extends="newbaseTemplate">
+		<put-attribute name="title" value="Monthly Business" />
+		<put-attribute name="body" value="/monthlybusiness.jsp" />
+	</definition>
+<!-- Customer -->	
+		<definition name="t_cchangepassword" extends="newbaseTemplate">
+		<put-attribute name="title" value="Change Password" />
+		<put-attribute name="body" value="/cchangepassword.jsp" />
+	</definition>
+
+	<definition name="t_cchangemobile" extends="newbaseTemplate">
+		<put-attribute name="title" value="Change Mobile" />
+		<put-attribute name="body" value="/cchangemobile.jsp" />
+	</definition>
+
+	<definition name="t_cchangeaddress" extends="newbaseTemplate">
+		<put-attribute name="title" value="Change Password" />
+		<put-attribute name="body" value="/cchangeaddress.jsp" />
+	</definition>
+
+
+<!-- Vendor -->		
+	
+	<definition name="t_vchangepassword" extends="newbaseTemplate">
+		<put-attribute name="title" value="Change Password" />
+		<put-attribute name="body" value="/vchangepassword.jsp" />
+	</definition>
+
+	<definition name="t_vchangemobile" extends="newbaseTemplate">
+		<put-attribute name="title" value="Change Mobile" />
+		<put-attribute name="body" value="/vchangemobile.jsp" />
+	</definition>
+
+	<definition name="t_vchangeaddress" extends="newbaseTemplate">
+		<put-attribute name="title" value="Change Password" />
+		<put-attribute name="body" value="/vchangeaddress.jsp" />
+	</definition>
+	
+	<!-- Admin -->	
+	
+	<definition name="t_changepassword" extends="newbaseTemplate">
+		<put-attribute name="title" value="Change Password" />
+		<put-attribute name="body" value="/changepassword.jsp" />
+	</definition>
+	
+	<definition name="t_changemobile" extends="newbaseTemplate">
+		<put-attribute name="title" value="Change Mobile" />
+		<put-attribute name="body" value="/changemobile.jsp" />
+	</definition>
+	
+	<definition name="t_changeaddress" extends="newbaseTemplate">
+		<put-attribute name="title" value="Change address" />
+		<put-attribute name="body" value="/changeaddress.jsp" />
+	</definition>
+	
+	
+	<definition name="t_sellproduct" extends="newbaseTemplate">
+		<put-attribute name="title" value="Change address" />
+		<put-attribute name="body" value="/sellproduct.jsp" />
+	</definition>
+	<definition name="t_orderdetails" extends="newbaseTemplate">
+		<put-attribute name="title" value="Change address" />
+		<put-attribute name="body" value="/orderdetails.jsp" />
+	</definition>
+	
+	
+	<definition name="t_cart" extends="newbaseTemplate">
+		<put-attribute name="title" value="Change address" />
+		<put-attribute name="body" value="/cart.jsp" />
+	</definition>
+	
+</tiles-definitions>
